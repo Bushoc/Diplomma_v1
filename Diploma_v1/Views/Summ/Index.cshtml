@@ -1,0 +1,18 @@
+﻿@model Diploma_v1.Models.FFFF
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "Summ", FormMethod.Post)) { 
+    @Html.DisplayNameFor(model => model.Opp1)
+    @Html.TextBoxFor(model => model.Opp1)
+
+    @Html.DisplayNameFor(model => model.Opp2)
+    @Html.TextBoxFor(model => model.Opp2)
+
+    @Html.DisplayNameFor(model => model.Result)
+    @Html.DisplayTextFor(model => model.Result)
+    <input type="submit" value="submit" />
+}

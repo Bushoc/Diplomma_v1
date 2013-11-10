@@ -1,0 +1,102 @@
+﻿@{
+	ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="Addition">
+	<h2>Addition</h2>
+
+	<input id="op1Addition" type="text" />
+	<input id="op2Addition" type="text" />
+	<button id="addition-submit" onclick="additionSubmitClicked()">Calculate</button>
+
+</div>
+
+<div id="Division">
+	<h2>Division</h2>
+
+	<input id="op1Division" type="text" />
+	<input id="op2Division" type="text" />
+	<button id="division-submit" onclick="divisionSubmitClicked()">Calculate</button>
+
+</div>
+
+<div id="Modulo">
+	<h2>Modulo</h2>
+
+	<input id="op1Modulo" type="text" />
+	<input id="op2Modulo" type="text" />
+	<button id="Modulo-submit" onclick="moduloSubmitClicked()">Calculate</button>
+
+</div>
+
+<div id="Multiplication">
+	<h2>Multiplication</h2>
+
+	<input id="op1Multiplication" type="text" />
+	<input id="op2Multiplication" type="text" />
+	<button id="multiplication-submit" onclick="multiplicationSubmitClicked()">Calculate</button>
+
+</div>
+
+<div id="Restoring">
+	<h2>Restoring</h2>
+
+	<input id="op1Restoring" type="text" />
+	<input id="op2Restoring" type="text" />
+	<button id="restoring-submit" onclick="restoringSubmitClicked()">Calculate</button>
+
+</div>
+
+<script>
+	function additionSubmitClicked() {
+		$.ajax({
+			url: 'api/SimpleSequenceOperation/Addition?' + 'op1=' + $("#op1Addition").val() + '&op2=' + $("#op2Addition").val(),
+			method: 'POST',
+			success: function (data) {
+				alert(data);
+			}
+		});
+	}
+
+	function divisionSubmitClicked() {
+		$.ajax({
+			url: 'api/SimpleSequenceOperation/Division?' + 'op1=' + $("#op1Division").val() + '&op2=' + $("#op2Division").val(),
+			method: 'POST',
+			success: function (data) {
+				alert(data);
+			}
+		});
+	}
+
+	function multiplicationSubmitClicked() {
+		$.ajax({
+			url: 'api/SimpleSequenceOperation/Multiplication?op1=' + $("#op1Multiplication").val() + '&op2=' + $("#op2Multiplication").val(),
+			method: 'POST',
+			success: function (data) {
+				alert(data);
+			}
+		});
+	}
+
+	function restoringSubmitClicked() {
+		$.ajax({
+			url: 'api/SimpleSequenceOperation/Restoring?op1=' + $("#op1Restoring").val() + '&op2=' + $("#op2Restoring").val(),
+			method: 'POST',
+			success: function (data) {
+				alert(data);
+			}
+		});
+	}
+
+	function moduloSubmitClicked() {
+		$.ajax({
+			url: 'api/SimpleSequenceOperation/Modulo?op1=' + $("#op1Modulo").val() + '&op2=' + $("#op2Modulo").val(),
+			method: 'POST',
+			success: function (data) {
+				alert(data);
+			}
+		});
+	}
+</script>
