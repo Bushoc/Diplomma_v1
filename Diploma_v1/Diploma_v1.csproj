@@ -283,6 +283,10 @@
       <Project>{5cb04e6e-0935-4bf3-b8ff-53a01ec65b7c}</Project>
       <Name>DomainDiploma_v1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MMPAlphabetGenerator\MMPAlphabetGenerator.csproj">
+      <Project>{306c737e-0622-43ce-b2c5-5fdcf5ad0bf2}</Project>
+      <Name>MMPAlphabetGenerator</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{54DED9
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMPAlphabetGenerator", "MMPAlphabetGenerator\MMPAlphabetGenerator.csproj", "{306C737E-0622-43CE-B2C5-5FDCF5AD0BF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{5CB04E6E-0935-4BF3-B8FF-53A01EC65B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB04E6E-0935-4BF3-B8FF-53A01EC65B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB04E6E-0935-4BF3-B8FF-53A01EC65B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306C737E-0622-43CE-B2C5-5FDCF5AD0BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306C737E-0622-43CE-B2C5-5FDCF5AD0BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306C737E-0622-43CE-B2C5-5FDCF5AD0BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306C737E-0622-43CE-B2C5-5FDCF5AD0BF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
