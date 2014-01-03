@@ -56,6 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Basic\CodingSequence.cs" />
+    <Compile Include="Context\Alphabet.cs" />
+    <Compile Include="Context\DiplomaContext.cs" />
+    <Compile Include="Context\Letter.cs" />
+    <Compile Include="Enums\AlphabetType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
