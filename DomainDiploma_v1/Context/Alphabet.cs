@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace DomainDiploma_v1.Context
 {
+    // test comment
     public class Alphabet
     {
         public int Id { get; set; }
